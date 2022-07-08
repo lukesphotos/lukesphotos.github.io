@@ -1,0 +1,849 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #1a1a1a !important;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+@font-face { font-family: Fut_Normal; src: url("../Fonts/futura medium bt.ttf"); } 
+@font-face { font-family: Fut_Bold; src: url("../Fonts/Futura Bold font.ttf");}
+@font-face { font-family: Fut_Heavy; src: url("../Fonts/Futura Heavy font.ttf");}
+@font-face { font-family: ITC_Souvenir; src: url("../Fonts/Souvenir-Medium.otf");}
+
+#page-container {
+    position: relative;
+    min-height: 102vh;
+}
+
+#content-wrap {
+    margin-top: 6em;
+}
+
+.container {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.navbar {
+    position: fixed;
+    background: #1a1a1a;
+    height: 6em;
+    scroll-padding-top: 1em;
+}
+
+.nav-link {
+    font-family: "Fut_Normal";
+    color: #C6E3EF !important;
+    text-decoration: none; 
+    padding: 1em;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    margin-top: 1em;
+    margin-right: 3.25em;
+}
+
+.nav-link:active {
+    font-family: "Fut_Heavy";
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: white !important;
+}
+
+.navbar-collapse {
+    background-color: rgba(26, 26, 26, 0.8);
+    justify-content: flex-end;
+    padding-bottom: 2em;
+    margin-top: -0.5em;
+}
+
+.navbar-toggle {
+    margin-right: 2.5em;
+}
+
+.navbar-brand h3 {
+    padding-top: 0.75em;
+    font-size: 1.2rem;
+    font-family: "Fut_Heavy";
+    text-align: center;
+    margin-left: 1.8em;
+    color: #C6E3EF;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(198,227,239)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggle{
+    background-color: transparent;
+    border: transparent;
+}
+
+.navbar-toggle:hover {
+    transform: scale(1.2);
+}
+
+.navbar-toggle:active {
+    background-color: white;
+    border-radius: 50%;
+    width: 2em;
+}
+
+#Top-Line {
+    padding-top: 5em;
+}
+
+#Top-Line hr {
+    z-index: 99;
+    position: fixed;
+    height: 4px;
+    width: 79%;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #257eba;
+    background-image: linear-gradient(to right, #21527f, #257eba, #c6e3ef);
+    opacity: 1;
+}
+
+#Image-Right-Line hr {
+    position: absolute;
+    width: 4px;
+    height: 92vw;
+    border-radius: 5px;
+    right: 8%;
+    transform: translateY(-97vw);
+    background: #257eba;
+    background-image: linear-gradient(to top, #21527f, #257eba, #c6e3ef);
+    opacity: 1;
+}
+
+#Image-Left-Line hr {
+    position: absolute;
+    width: 4px;
+    height: 92vw;
+    border-radius: 5px;
+    left: 8%;
+    transform: translateY(-97vw);
+    background: #257eba;
+    background-image: linear-gradient(to bottom, #21527f, #257eba, #c6e3ef);
+    opacity: 1;
+}
+
+#Main_Rings {
+    position: absolute;
+    width: 18%;
+}
+
+#Profession-Container {
+    padding-top: -10em;
+}
+
+#Profession {
+    font-family: "ITC Souvenir";
+    text-align: center;
+    font-size: 1rem;
+    color: #C6E3EF
+}
+
+.Calling_Button_Container {
+    padding-top: 2em;
+    width: 8em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#Calling_Button {
+    width: 8em;
+    height: auto;
+    background-color: #C6E3EF;
+    font-family: "ITC Souvenir";
+    text-align: center;
+    font-size: 1rem;
+    color: #21527F;
+    text-decoration: none;
+}
+
+#Calling_Button:hover {
+    transform: scale(1.075);
+}
+
+#Luke_Self_Container {
+    padding-top: 1em;
+}
+
+#Luke_Self {
+    pointer-events: none;
+    width: 80%;
+    border-radius: 5%;
+}
+
+#About_Me {
+    font-family: "ITC Souvenir";
+    text-align: center;
+    font-size: 1rem;
+    color: #C6E3EF;
+    width: 82%;
+    padding-bottom: 4em;
+}
+
+#Main_Klaud_Container {
+    padding-top: 6em;
+    padding-bottom: 5.5em;
+}
+
+#Main_Klaud {
+    pointer-events: none;
+    width: 75%;
+    border-radius: 5%;
+}
+
+.Thumbnail-Container {
+    display: flex;
+    justify-content: center;
+    padding-top: 6em;
+}
+
+#Thumbnails {
+    -webkit-column-count: 1;
+    -webkit-column-gap:   2em;
+    -moz-column-count:    1;
+    -moz-column-gap:      2em;
+    column-count:         1;
+    column-gap:           2em;  
+}
+
+#Thumbnails img {
+    border-radius: 5%;
+    width: 100%;
+    margin: auto;
+    height: auto !important;
+}
+
+#Thumbnails a {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#Thumbnails img:hover {
+    transform: scale(1.075);
+    border-radius: 1em;
+}
+
+#Contact_Me {
+    position: relative;
+    padding-top: 5.5em;
+    font-family: "ITC Souvenir";
+    text-align: center;
+    font-size: 1rem;
+    color: #C6E3EF;
+    width: 82%
+}
+
+#Email-Container {
+    padding-bottom: 5.5em;
+}
+
+#Footer_Section {
+    position: relative;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    background-color: white;
+    color: #1a1a1a;
+    font-family: "Fut_Normal";
+    text-align: center;
+    bottom: 0;
+}
+
+.Footer_Text {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+img {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media (min-width: 420px) {
+    #Image-Right-Line hr {
+        transform: translateY(-96vw);
+        right: 9%;
+    }
+
+    #Image-Left-Line hr {
+        transform: translateY(-96vw);
+        left: 9%;
+    }
+}
+
+@media (min-width: 481px) {
+    .navbar-brand h3 {
+        margin-left: 2.7em;
+        font-size: 1.4rem;
+    }
+
+    .navbar-toggle {
+        margin-right: 2.7em;
+        font-size: 1.3rem;
+    }
+
+    #Top-Line hr {
+        width: 80%;
+        height: 5px;
+        margin-top: 0.95em;
+    }
+
+    #Profession {
+        font-size: 1.2rem;
+        padding-top: 0.7em;
+    }
+
+    #Calling_Button {
+        font-size: 1.2rem;
+    }
+
+    #Main_Klaud {
+        width: 68%;
+    }
+
+    #Image-Right-Line hr {
+        width: 5px;
+        right: 13.5%;
+        height: 84vw;
+        transform: translateY(-87vw);
+    }
+
+    #About_Me {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    #Luke_Self {
+        width: 72%;
+    }
+
+    #Image-Left-Line hr {
+        width: 5px;
+        left: 13%;
+        height: 84.5vw;
+        transform: translateY(-88vw)
+    }
+
+    #Thumbnails {
+        width: 100%
+    }
+
+    #Thumbnails a {
+        width: 72%;
+    }
+
+    #Contact_Me {
+        font-size: 1.2rem;
+        width: 80%;
+    }
+
+    .Footer_Text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 620px) {
+    .navbar-toggle {
+        margin-right: 2.5em;
+    }
+
+    #Image-Right-Line hr {
+        width: 5px;
+        right: 13.5%;
+        height: 84vw;
+        transform: translateY(-86.5vw);
+    }
+
+    #Image-Left-Line hr {
+        width: 5px;
+        left: 13%;
+        height: 86vw;
+        transform: translateY(-88.5vw);
+    }
+
+    #Top-Line hr {
+        width: 84%;
+        height: 5px;
+    }
+
+    #About_Me {
+        width: 75%;
+    }
+
+    #Contact_Me {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand h3 {
+        margin-left: 2em;
+    }
+
+    .nav-link {
+        margin-right: 1.8em;
+        margin-left: -1em;
+        font-size: 1.3rem;
+        margin-top: 1.3em;
+    }
+
+
+    #Top-Line hr {
+        z-index: 10000;
+        width: 93%;
+        height: 5px;
+        transform: translateX(-50%);
+    }
+
+    #Main_Rings {
+        padding-top: 2.2em;
+    }
+
+    #Profession-Container {
+        padding: 0;
+        padding-top: 7.2em;
+        padding-left: 3em;
+    }
+
+    #Profession {
+        font-size: 1.3rem;
+    }
+
+    .Calling_Button_Container {
+        padding-left: 3em;
+    }
+
+    #Calling_Button {
+        font-size: 1.3rem;
+    }
+
+    #Main_Klaud_Container {
+        padding: 0;
+        padding-right: 1.4em;
+        padding-top: 1.5em;
+    }
+    
+    #Main_Klaud {
+        width: 79.5%;
+        border-radius: 3%;
+    }
+
+    #Image-Right-Line hr {
+        width: 5px;
+        right: 3.5%;
+        height: 39vw;
+        transform: translateY(-41vw);
+    }
+
+    #Luke_Self_Container {
+        padding: 0;
+        padding-top: 6.5em;
+        padding-bottom: 4.8em;
+    }
+
+    #Luke_Self {
+        width: 77.5%;
+    }
+
+    #Image-Left-Line hr {
+        width: 5px;
+        left: 11%;
+        height: 40vw;
+        transform: translateY(-42.5vw);
+    }
+
+    #About_Me {
+        width: 100%;
+        padding-top: 6em;
+        font-size: 1.2rem;
+    }
+
+    .Thumbnail-Container {
+        padding-bottom: 1.6em;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 85%;
+    }
+
+    #Thumbnails {
+        text-align: center;
+        width: 100%;
+        -webkit-column-count: 2;
+        -webkit-column-gap:   2em;
+        -moz-column-count:    2;
+        -moz-column-gap:      2em;
+        column-count:         2;
+        column-gap:           2em;
+    }
+
+    #Thumbnails a {
+        width: 100%;
+    }
+
+    #Thumbnails img {
+        width: 100%;
+    }
+
+    #Thumbnails img:hover {
+        transform: scale(1.075);
+    }
+
+    #Contact_Me {
+        font-size: 1.2rem;
+        width: 85%;
+        padding-top: 3.3em;
+    }
+
+    #Email-Container {
+        padding: 0;
+        padding-top: 2em;
+        padding-bottom: 6.5em;
+    }
+
+    .Footer_Text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #Main_Rings {
+        display: none;
+    }
+}
+
+@media (min-width: 848px) {
+    #About_Me {
+        width: 80%;
+    }
+}
+
+@media (min-width: 928px) {
+    #About_Me {
+        padding-top: 7em;
+        width: 75%;
+    }
+}
+
+@media (min-width: 991px) {
+    .navbar-brand h3 {
+        margin-left: 3.8em;
+        font-size: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 1.4rem;
+        margin-top: 1.3em;
+        margin-left: -2.5em;
+        margin-right: 3.8em;
+    }
+
+    #About_Me {
+        padding-top: 9em;
+        width: 80%;
+    }
+
+    #Top-Line hr {
+        width: 82%;
+    }
+
+    #Main_Rings {
+        padding-top: 1em;
+        width: 23%;
+    }
+
+    #Profession-Container {
+        padding: 0;
+        padding-top: 9.5em;
+    }
+
+    #Profession {
+        font-size: 1.4rem;
+    }
+
+    .Calling_Button_Container {
+        padding: 0;
+        padding-top: 2em;
+    }
+
+    #Calling_Button {
+        font-size: 1.4rem;
+    }
+
+    #Main_Klaud_Container {
+        padding-top: 3em;
+    }
+
+    #Main_Klaud {
+        width: 100%;
+    }
+
+    #Image-Right-Line hr {
+        width: 5px;
+        right: 8%;
+        height: 39.5vw;
+        transform: translateY(-41vw);
+    }
+
+    #Luke_Self {
+        width: 78%;
+    }
+
+    #Image-Left-Line hr {
+        width: 5px;
+        left: 11.25%;
+        height: 40.4vw;
+        transform: translateY(-42vw);
+    }
+
+    #Email-Container {
+        padding-top: 5.5em;
+    }
+
+    #Contact_Me {
+        padding-top: 3.8em;
+        padding-bottom: 5em;
+    }
+
+}
+
+@media (min-width: 1201px) {
+    .navbar {
+        height: 7em;
+    }
+
+    .navbar-brand h3 {
+        margin-left: 4.2em;
+    }
+
+    .nav-link {
+        margin-right: 4.4em;
+    }
+
+    #Main_Rings {
+        padding: 0;
+        margin-top: -0.5em;
+        width: 20%;
+    }
+
+    #Main_Klaud_Container {
+        padding: 0;
+    }
+
+    #Main_Klaud {
+        width: 90%;
+    }
+
+    #Top-Line {
+        padding-top: 6em;
+    }
+
+    #Top-Line hr {
+        width: 82%;
+    }
+
+    #Profession-Container {
+        padding-top: 9em;
+    }
+
+    #Image-Right-Line hr {
+        height: 38vw;
+        transform: translateY(-39.5vw);
+    }
+
+    #Luke_Self {
+        width: 72.5%;
+    }
+
+    #Thumbnails a {
+        width: 95%;
+    }
+
+    #Thumbnails img {
+        width: 95%;
+    }
+
+    #Thumbnails img:hover {
+        border-radius: 1.5em;
+    }
+
+    #Image-Left-Line hr {
+        left: 12.7%;
+        height: 37.5vw;
+        transform: translateY(-39vw);
+    }
+
+    #About_Me {
+        font-size: 1.35rem;
+        padding-top: 11em;
+    }
+}
+
+@media (min-width: 1440px) {
+    #Image-Right-Line hr {
+        width: 5px;
+        right: 8.25%;
+        height: 37.75vw;
+        transform: translateY(-39vw);
+    }
+
+    #Top-Line hr {
+        width: 88%;
+    }
+
+    .nav-link {
+        margin-right: 4em;
+    }
+
+    #Image-Left-Line hr {
+        left: 13%;
+        height: 37vw;
+        transform: translateY(-38.5vw);
+    }
+
+    #About_Me {
+        width: 64%;
+        padding-top: 13.8em;
+    }
+}
+
+@media (min-width: 1696px) {
+    #Profession {
+        font-size: 1.5rem;
+    }
+
+    #Calling_Button {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand h3 {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    #About_Me {
+        padding-top: 10.5em;
+        font-size: 1.5rem;
+    }
+
+    #Main_Rings {
+        margin-top: 1em;
+    }
+
+    #Main_Klaud_Container {
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+    }
+    
+    #Profession-Container {
+        padding-top: 15em;
+    }
+
+    #Contact_Me {
+        font-size: 1.5rem;
+        padding-top: 5em;
+    }
+
+    #Email-Container {
+        font-size: 1.5rem;
+    }
+
+    .Footer_Text {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1920px) {
+    #Top-Line hr {
+        width: 90%;
+        height: 5.5px;
+    }
+
+    #Profession {
+        font-size: 1.6rem;
+    }
+
+    #Calling_Button {
+        font-size: 1.6rem;
+    }
+
+    .navbar-brand h3 {
+        font-size: 1.7rem;
+    }
+
+    .nav-link {
+        font-size: 1.6rem;
+    }
+
+    #About_Me {
+        padding-top: 11.5em;
+        font-size: 1.6rem;
+    }
+
+    #Main_Rings {
+        margin-top: 1.2em;
+    }
+
+    #Main_Klaud_Container {
+        padding-top: 2.3em;
+        padding-bottom: 1em;
+    }
+    
+    #Profession-Container {
+        padding-top: 16em;
+    }
+
+    #Contact_Me {
+        font-size: 1.6rem;
+        padding-top: 5.5em;
+    }
+
+    .Footer_Text {
+        font-size: 1.5rem;
+    }
+
+    #Email-Container {
+        font-size: 1.6rem;
+    }
+
+    #Image-Right-Line hr {
+        width: 5.5px;
+        right: 8.5%;
+        height: 37.5vw;
+        transform: translateY(-38.5vw);
+    }
+
+    #Image-Left-Line hr {
+        width: 5.5px;
+        left: 13%;
+        height: 37.5vw;
+        transform: translateY(-38.5vw);
+    }
+}
