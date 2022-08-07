@@ -9,7 +9,7 @@ body {
 @font-face { font-family: Fut_Normal; src: url("../Fonts/futura medium bt.ttf"); } 
 @font-face { font-family: Fut_Bold; src: url("../Fonts/Futura Bold font.ttf");}
 @font-face { font-family: Fut_Heavy; src: url("../Fonts/Futura Heavy font.ttf");}
-@font-face { font-family: ITC_Souvenir; src: url("../Fonts/Souvenir-Medium.otf");}
+@font-face { font-family: ITC_Souvenir; src: url("../Fonts/Souvenir-Medium.ttf");}
 
 #page-container {
     position: relative;
