@@ -1,13 +1,16 @@
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
     padding: 0;
     margin: 0;
     background: #1a1a1a !important;
     max-width: 100%;
-    overflow-x: hidden;
+    position: relative;
 }
 
-@font-face { font-family: Fut_Normal; src: url("../Fonts/futura medium bt.ttf"); } 
-@font-face { font-family: Fut_Bold; src: url("../Fonts/Futura Bold font.ttf");}
+@font-face { font-family: Fut_Normal; src: url("../Fonts/futura medium bt.ttf"); }
 @font-face { font-family: Fut_Heavy; src: url("../Fonts/Futura Heavy font.ttf");}
 @font-face { font-family: ITC_Souvenir; src: url("../Fonts/Souvenir-Medium.ttf");}
 
