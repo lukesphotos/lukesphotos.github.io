@@ -143,7 +143,7 @@ body {
 }
 
 #Profession {
-    font-family: "ITC Souvenir" !important;
+    font-family: "ITC Souvenir";
     text-align: center;
     font-size: 1rem;
     color: #C6E3EF
@@ -161,11 +161,12 @@ body {
     width: 8em;
     height: auto;
     background-color: #C6E3EF;
-    font-family: "ITC Souvenir" !important;
+    font-family: "ITC Souvenir";
     text-align: center;
     font-size: 1rem;
     color: #21527F;
     text-decoration: none;
+    border-radius: 0.5em;
 }
 
 #Calling_Button:hover {
@@ -183,7 +184,7 @@ body {
 }
 
 #About_Me {
-    font-family: "ITC Souvenir" !important;
+    font-family: "ITC Souvenir";
     text-align: center;
     font-size: 1rem;
     color: #C6E3EF;
@@ -205,7 +206,8 @@ body {
 .Thumbnail-Container {
     display: flex;
     justify-content: center;
-    padding-top: 6em;
+    padding-top: 4em;
+    padding-bottom: 2em;
 }
 
 #Thumbnails {
@@ -214,7 +216,7 @@ body {
     -moz-column-count:    1;
     -moz-column-gap:      2em;
     column-count:         1;
-    column-gap:           2em;  
+    column-gap:           2em; 
 }
 
 #Thumbnails img {
@@ -222,6 +224,8 @@ body {
     width: 100%;
     margin: auto;
     height: auto !important;
+    opacity: 85%;
+    transition: scale ease-in-out .2s, opacity ease-in-out .2s;
 }
 
 #Thumbnails a {
@@ -231,14 +235,15 @@ body {
 }
 
 #Thumbnails img:hover {
-    transform: scale(1.075);
+    scale: 1.1;
     border-radius: 1em;
+    opacity: 100%;
 }
 
 #Contact_Me {
     position: relative;
     padding-top: 5.5em;
-    font-family: "ITC Souvenir" !important;
+    font-family: "ITC Souvenir";
     text-align: center;
     font-size: 1rem;
     color: #C6E3EF;
@@ -268,7 +273,7 @@ body {
 
 .fade-in {
     opacity: 0;
-    transition: opacity 300ms ease-in;
+    transition: opacity 400ms ease-in;
 }
 
 .fade-in.appear {
@@ -414,7 +419,7 @@ img {
 
     #Top-Line hr {
         z-index: 10000;
-        width: 93%;
+        width: 90%;
         height: 5px;
         transform: translateX(-50%);
     }
@@ -729,6 +734,15 @@ img {
         width: 64%;
         padding-top: 13.8em;
     }
+
+    #Thumbnails img:hover {
+        scale: 1.025;
+        border-radius: 2em;
+    }
+
+    .Thumbnail-Container {
+        padding-bottom: 2.5em;
+    }
 }
 
 @media (min-width: 1696px) {
@@ -808,7 +822,7 @@ img {
     }
 
     #Main_Rings {
-        margin-top: 1.2em;
+        margin-top: 1em;
     }
 
     #Main_Klaud_Container {
@@ -834,7 +848,7 @@ img {
     }
 
     #Image-Right-Line hr {
-        width: 5.5px;
+        width: 6px;
         right: 8.5%;
         height: 37.5vw;
         transform: translateY(-38.5vw);
